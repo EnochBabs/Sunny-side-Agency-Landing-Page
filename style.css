@@ -1,0 +1,321 @@
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900
+
+## Icons
+
+We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif, 'Barlow';
+  /* background-color: white; */
+
+  max-width: 100%;
+
+  /* display: grid; */
+}
+
+.container {
+  margin: auto;
+}
+
+.header {
+  /* width: 100%; */
+  /* max-width: 80rem; */
+}
+
+.header-img {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+}
+
+.logo {
+  height: 2.3rem;
+}
+
+.nav {
+  margin: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-link-btn {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 11px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 400;
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.header-arrow {
+  display: block;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+
+  /* height: 20rem; */
+  /* background-color: orangered; */
+}
+
+.featured-transform {
+  background-color: white;
+  /* max-width: 140rem; */
+  height: 50rem;
+  /* width: 50%; */
+}
+
+.featured-text-1 {
+  height: 50rem;
+  padding: 16rem;
+  /* background-color: white; */
+  /* text-align: center; */
+}
+
+.featured-text h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.p-text {
+  line-height: 1.8;
+  color: hsl(232, 10%, 55%);
+}
+
+.egg-image {
+  background-image: url(./images/desktop/image-transform.jpg);
+  height: 50rem;
+  /* width: 50%; */
+  background-size: cover;
+}
+
+.featured-btn {
+  display: block;
+  color: black;
+}
+
+.featured-transform-2 {
+  /* background-color: white; */
+  height: 50rem;
+  /* max-width: 140rem; */
+}
+
+.flower-image {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  height: 50rem;
+  /* width: 50%; */
+  background-size: cover;
+}
+
+.featured-text-2 {
+  /* width: 50%; */
+  height: 50rem;
+  padding: 16rem;
+  background-color: white;
+}
+
+.last-grid {
+  /* max-width: 140rem; */
+}
+
+.left-last-img {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  height: 50rem;
+  /* width: 50%; */
+  background-size: cover;
+}
+
+.right-last-img {
+  background-image: url(./images/desktop/image-photography.jpg);
+  height: 50rem;
+  /* width: 50%; */
+  background-size: cover;
+}
+
+.final-grid-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30rem;
+}
+
+.final-grid-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 16rem;
+  margin-left: 16rem;
+}
+
+.testimonials {
+  padding: 12rem 20rem;
+}
+
+.testimonial-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(232, 10%, 55%);
+  margin-bottom: 8rem;
+}
+
+.testimonials-flex {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.testimonial-first-flex {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.8rem;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.testimonial-text {
+  text-align: center;
+}
+
+.testimonial-name {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+span {
+  color: hsl(232, 10%, 55%);
+}
+
+.showcase {
+  /* background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+}
+
+.showcase-img img {
+  height: 35rem;
+  width: 100%;
+}
+
+.footer {
+  background-color: hsl(168, 34%, 41%);
+  width: 100%;
+ 
+}
+
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.footer-flex {
+  margin: 4rem 0;
+  color: hsl(167, 40%, 24%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.social-media {
+  padding-bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
